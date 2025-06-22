@@ -1,0 +1,112 @@
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100vh;
+    position:fixed;
+    left: 45%;
+}
+
+.sun{
+    width: 70px;
+    height: 70px;
+    background-color: darkorange;
+    border-radius: 50px;
+    position: relative;
+    z-index: -1;
+    animation: sun 5s infinite;
+}
+
+.cloud {
+    position: absolute;
+    right: 70px;
+    animation: cloud 5s infinite;
+    
+    
+}
+
+.rain {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 36px;
+    color: rgb(29, 179, 179);
+    position: relative;
+    top: 60px;
+    right: 10px;
+    
+    
+}
+
+#rain1 {
+    animation: rain1 5s infinite step-end;
+    opacity: 0;
+}
+
+
+#rain2 {
+    animation: rain2 5s infinite step-end;
+    opacity: 0;
+}
+
+#rain3 {
+    animation: rain3 5s infinite step-end;
+    opacity: 0;
+}
+
+@keyframes sun {
+    0% {transform: scale(0);
+    }
+
+    10% {transform: scale(1.2);
+    }
+
+    15% {transform: scale(1);}
+
+    95% {transform: scale(1);}
+
+}
+
+@keyframes cloud {
+   0% {transform: scale(0);
+    }
+
+    20% {transform: scale(0);
+    }
+
+    25% {transform: scale(140);
+    }
+
+    35% {transform: scale(120);
+    }
+
+    95% {transform: scale(120);
+    }
+}
+
+
+@keyframes rain1 {
+
+    40% {opacity:1;
+    }
+
+
+}
+
+@keyframes rain2 {
+
+    50% {opacity:1;
+    }
+
+
+}
+
+@keyframes rain3 {
+
+    60% {opacity:1;
+    }
+
+
+}
+
+
